@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+
+import './VideoItem.css';
 
 const VideoItem = ({video}) => {
   return (
-    <div className="item">
+    <div className="video-item item">
         <img className="ui image" 
             src={video.snippet.thumbnails.medium.url}
             alt={video.snippet.title} />
@@ -11,7 +13,7 @@ const VideoItem = ({video}) => {
                 {video.snippet.title}
             </div>
             <div className="description">
-                ssss
+                
             </div>
         </div>
     </div>
